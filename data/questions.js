@@ -89,7 +89,18 @@ const QUESTIONS = [
   },
   {
     "id": 11,
-    "q": "In public key cryptography, which key is shared openly?  \fA) Private key B) Public key C) Session key D) Secret key Answer: B  Q12. What is the main function of miners in Bitcoin?",
+    "q": "In public key cryptography, which key is shared openly?",
+    "options": {
+      "A": "Private key",
+      "B": "Public key",
+      "C": "Session key",
+      "D": "Secret key"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "q": "What is the main function of miners in Bitcoin?",
     "options": {
       "A": "Store user passwords",
       "B": "Validate transactions and create blocks",
@@ -331,7 +342,18 @@ const QUESTIONS = [
   },
   {
     "id": 42,
-    "q": "What is the role of validators in Ethereum PoS?  \fA) Encrypt transactions B) Store private keys C) Propose and validate blocks D) Manage wallets Answer: C  Q43. Which of the following is a disadvantage of Proof of Burn?",
+    "q": "What is the role of validators in Ethereum PoS?",
+    "options": {
+      "A": "Encrypt transactions",
+      "B": "Store private keys",
+      "C": "Propose and validate blocks",
+      "D": "Manage wallets"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 43,
+    "q": "Which of the following is a disadvantage of Proof of Burn?",
     "options": {
       "A": "High energy consumption",
       "B": "Loss of usable cryptocurrency",
@@ -463,7 +485,18 @@ const QUESTIONS = [
   },
   {
     "id": 59,
-    "q": "Which of the following ensures faster agreement in CoSi (Collective Signing)?  \fA) Sequential signature process B) Aggregated signatures from multiple nodes C) Central authority approval D) Single node validation Answer: B  Q60. What is the main purpose of writing chaincode in Hyperledger Fabric?",
+    "q": "Which of the following ensures faster agreement in CoSi (Collective Signing)?",
+    "options": {
+      "A": "Sequential signature process",
+      "B": "Aggregated signatures from multiple nodes",
+      "C": "Central authority approval",
+      "D": "Single node validation"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 60,
+    "q": "What is the main purpose of writing chaincode in Hyperledger Fabric?",
     "options": {
       "A": "Mining blocks",
       "B": "Defining business logic for transactions",
@@ -595,7 +628,18 @@ const QUESTIONS = [
   },
   {
     "id": 76,
-    "q": "Which of the following best describes a Sybil attack in blockchain?  \fA) Mining multiple blocks simultaneously B) Creating multiple fake identities to control the network C) Stealing private keys D) Delaying transactions Answer: B  Q77. What is the main purpose of network security mechanisms in blockchain?",
+    "q": "Which of the following best describes a Sybil attack in blockchain?",
+    "options": {
+      "A": "Mining multiple blocks simultaneously",
+      "B": "Creating multiple fake identities to control the network",
+      "C": "Stealing private keys",
+      "D": "Delaying transactions"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 77,
+    "q": "What is the main purpose of network security mechanisms in blockchain?",
     "options": {
       "A": "Increase transaction fees",
       "B": "Prevent unauthorized access and attacks",
@@ -694,7 +738,18 @@ const QUESTIONS = [
   },
   {
     "id": 86,
-    "q": "What is the primary goal of blockchain security measures?  \fA) Increase mining difficulty B) Ensure confidentiality, integrity, and availability C) Reduce decentralization D) Increase block size Answer: B  Q87. Which of the following best describes permissionless blockchain risks?",
+    "q": "What is the primary goal of blockchain security measures?",
+    "options": {
+      "A": "Increase mining difficulty",
+      "B": "Ensure confidentiality, integrity, and availability",
+      "C": "Reduce decentralization",
+      "D": "Increase block size"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 87,
+    "q": "Which of the following best describes permissionless blockchain risks?",
     "options": {
       "A": "Controlled access",
       "B": "Lack of trust among participants",
@@ -892,7 +947,18 @@ const QUESTIONS = [
   },
   {
     "id": 107,
-    "q": "What happens when a block is successfully mined?  \fA) It is discarded B) It is added to the blockchain C) It becomes a wallet D) It is encrypted permanently Answer: B  Q108. What is block propagation?",
+    "q": "What happens when a block is successfully mined?",
+    "options": {
+      "A": "It is discarded",
+      "B": "It is added to the blockchain",
+      "C": "It becomes a wallet",
+      "D": "It is encrypted permanently"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 108,
+    "q": "What is block propagation?",
     "options": {
       "A": "Deleting old blocks",
       "B": "Sharing newly mined blocks across the network",
@@ -958,7 +1024,18 @@ const QUESTIONS = [
   },
   {
     "id": 114,
-    "q": "Which key is used to sign Bitcoin transactions?  \fA) Public key B) Session key C) Private key D) Shared key Answer: C  Q115. What is the purpose of a Bitcoin address?",
+    "q": "Which key is used to sign Bitcoin transactions?",
+    "options": {
+      "A": "Public key",
+      "B": "Session key",
+      "C": "Private key",
+      "D": "Shared key"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 115,
+    "q": "What is the purpose of a Bitcoin address?",
     "options": {
       "A": "Encrypt blocks",
       "B": "Identify destination for payments",
@@ -1024,7 +1101,18 @@ const QUESTIONS = [
   },
   {
     "id": 121,
-    "q": "Who proposed Ethereum?  \fA) Satoshi Nakamoto B) Vitalik Buterin C) Gavin Wood D) Hal Finney Answer: B  Q122. What is a smart contract?",
+    "q": "Who proposed Ethereum?",
+    "options": {
+      "A": "Satoshi Nakamoto",
+      "B": "Vitalik Buterin",
+      "C": "Gavin Wood",
+      "D": "Hal Finney"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 122,
+    "q": "What is a smart contract?",
     "options": {
       "A": "Physical agreement",
       "B": "Self-executing program on blockchain",
@@ -1090,7 +1178,18 @@ const QUESTIONS = [
   },
   {
     "id": 128,
-    "q": "What is the role of validators in Ethereum Proof of Stake?  \fA) Encrypt blocks B) Validate and propose blocks C) Manage wallets D) Store passwords Answer: B  Q129. What is staking in Proof of Stake?",
+    "q": "What is the role of validators in Ethereum Proof of Stake?",
+    "options": {
+      "A": "Encrypt blocks",
+      "B": "Validate and propose blocks",
+      "C": "Manage wallets",
+      "D": "Store passwords"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 129,
+    "q": "What is staking in Proof of Stake?",
     "options": {
       "A": "Destroying coins",
       "B": "Locking cryptocurrency to participate in validation",
@@ -1156,7 +1255,18 @@ const QUESTIONS = [
   },
   {
     "id": 135,
-    "q": "Which blockchain property improves security against tampering?  \fA) Centralization B) Immutability C) Password storage D) Cloud hosting Answer: B  Q136. What is front-running in blockchain?",
+    "q": "Which blockchain property improves security against tampering?",
+    "options": {
+      "A": "Centralization",
+      "B": "Immutability",
+      "C": "Password storage",
+      "D": "Cloud hosting"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 136,
+    "q": "What is front-running in blockchain?",
     "options": {
       "A": "Delaying transactions intentionally",
       "B": "Manipulating transaction order for profit",
@@ -1508,7 +1618,18 @@ const QUESTIONS = [
   },
   {
     "id": 180,
-    "q": "Which consensus algorithm is commonly used in enterprise blockchains?  \fA) Proof of Work B) PBFT C) Hashcash D) Proof of Burn Answer: B  Q181. Hyperledger Fabric is mainly designed for:",
+    "q": "Which consensus algorithm is commonly used in enterprise blockchains?",
+    "options": {
+      "A": "Proof of Work",
+      "B": "PBFT",
+      "C": "Hashcash",
+      "D": "Proof of Burn"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 181,
+    "q": "Hyperledger Fabric is mainly designed for:",
     "options": {
       "A": "Public cryptocurrency mining",
       "B": "Enterprise blockchain applications",
@@ -1574,7 +1695,18 @@ const QUESTIONS = [
   },
   {
     "id": 187,
-    "q": "What does MSP stand for in Hyperledger Fabric?  \fA) Membership Service Provider B) Mining Service Protocol C) Main Security Process D) Message Signing Platform Answer: A  Q188. Which feature makes Hyperledger Fabric suitable for enterprises?",
+    "q": "What does MSP stand for in Hyperledger Fabric?",
+    "options": {
+      "A": "Membership Service Provider",
+      "B": "Mining Service Protocol",
+      "C": "Main Security Process",
+      "D": "Message Signing Platform"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 188,
+    "q": "Which feature makes Hyperledger Fabric suitable for enterprises?",
     "options": {
       "A": "Anonymous access",
       "B": "Permissioned participation",
@@ -1783,7 +1915,18 @@ const QUESTIONS = [
   },
   {
     "id": 211,
-    "q": "What is tokenization in blockchain?  \fA) Encrypting files B) Representing assets digitally as blockchain tokens C) Compressing transactions D) Deleting blocks Answer: B  Q212. What is an NFT?",
+    "q": "What is tokenization in blockchain?",
+    "options": {
+      "A": "Encrypting files",
+      "B": "Representing assets digitally as blockchain tokens",
+      "C": "Compressing transactions",
+      "D": "Deleting blocks"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 212,
+    "q": "What is an NFT?",
     "options": {
       "A": "Fungible cryptocurrency",
       "B": "Unique digital asset token",
@@ -1791,6 +1934,17 @@ const QUESTIONS = [
       "D": "Hashing algorithm"
     },
     "answer": "B"
+  },
+  {
+    "id": 212,
+    "q": "Why are NFTs considered unique?",
+    "options": {
+      "A": "Each token has distinct metadata and ownership",
+      "B": "They use centralized servers",
+      "C": "They replace blockchains",
+      "D": "They remove cryptography"
+    },
+    "answer": "A"
   },
   {
     "id": 213,
@@ -1849,7 +2003,18 @@ const QUESTIONS = [
   },
   {
     "id": 218,
-    "q": "What is an atomic swap?  \fA) Partial transfer of assets B) Direct cross-chain exchange without intermediaries C) Mining reward mechanism D) Wallet encryption Answer: B  Q219. What is the purpose of Layer 2 solutions?",
+    "q": "What is an atomic swap?",
+    "options": {
+      "A": "Partial transfer of assets",
+      "B": "Direct cross-chain exchange without intermediaries",
+      "C": "Mining reward mechanism",
+      "D": "Wallet encryption"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 219,
+    "q": "What is the purpose of Layer 2 solutions?",
     "options": {
       "A": "Increase scalability and transaction speed",
       "B": "Replace blockchain completely",
@@ -2080,7 +2245,18 @@ const QUESTIONS = [
   },
   {
     "id": 246,
-    "q": "What is an externally owned account (EOA) in Ethereum?  \fA) Account controlled by private keys B) Smart contract account C) Mining account D) Exchange account only Answer: A  Q247. What controls a contract account in Ethereum?",
+    "q": "What is an externally owned account (EOA) in Ethereum?",
+    "options": {
+      "A": "Account controlled by private keys",
+      "B": "Smart contract account",
+      "C": "Mining account",
+      "D": "Exchange account only"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 247,
+    "q": "What controls a contract account in Ethereum?",
     "options": {
       "A": "Passwords",
       "B": "Smart contract code",
@@ -2146,7 +2322,18 @@ const QUESTIONS = [
   },
   {
     "id": 253,
-    "q": "What is transaction malleability?  \fA) Ability to modify transaction identifier before confirmation B) Encrypting transactions C) Deleting wallet addresses D) Compressing blocks Answer: A  Q254. Which attack manipulates transaction order for financial gain?",
+    "q": "What is transaction malleability?",
+    "options": {
+      "A": "Ability to modify transaction identifier before confirmation",
+      "B": "Encrypting transactions",
+      "C": "Deleting wallet addresses",
+      "D": "Compressing blocks"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 254,
+    "q": "Which attack manipulates transaction order for financial gain?",
     "options": {
       "A": "Replay attack",
       "B": "Front-running attack",
@@ -2212,7 +2399,18 @@ const QUESTIONS = [
   },
   {
     "id": 260,
-    "q": "Why should private keys never be shared?  \fA) They authorize ownership and transactions B) They increase transaction fees C) They reduce security only slightly D) They store public hashes Answer: A  Q261. What is decentralized finance (DeFi)?",
+    "q": "Why should private keys never be shared?",
+    "options": {
+      "A": "They authorize ownership and transactions",
+      "B": "They increase transaction fees",
+      "C": "They reduce security only slightly",
+      "D": "They store public hashes"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 261,
+    "q": "What is decentralized finance (DeFi)?",
     "options": {
       "A": "Financial services built on blockchain networks",
       "B": "Centralized banking platform",
@@ -2278,7 +2476,18 @@ const QUESTIONS = [
   },
   {
     "id": 267,
-    "q": "Which blockchain feature enables DeFi platforms?  \fA) Smart contracts B) Cloud databases C) Centralized servers D) Email verification Answer: A  Q268. What is collateral in DeFi lending?",
+    "q": "Which blockchain feature enables DeFi platforms?",
+    "options": {
+      "A": "Smart contracts",
+      "B": "Cloud databases",
+      "C": "Centralized servers",
+      "D": "Email verification"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 268,
+    "q": "What is collateral in DeFi lending?",
     "options": {
       "A": "Asset locked to secure a loan",
       "B": "Mining reward",
@@ -2344,7 +2553,18 @@ const QUESTIONS = [
   },
   {
     "id": 274,
-    "q": "What is a DAO?  \fA) Decentralized Autonomous Organization B) Distributed Access Operation C) Data Allocation Object D) Decentralized Application Output Answer: A  Q275. How are decisions generally made in a DAO?",
+    "q": "What is a DAO?",
+    "options": {
+      "A": "Decentralized Autonomous Organization",
+      "B": "Distributed Access Operation",
+      "C": "Data Allocation Object",
+      "D": "Decentralized Application Output"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 275,
+    "q": "How are decisions generally made in a DAO?",
     "options": {
       "A": "Through voting mechanisms",
       "B": "By one central authority",
@@ -2718,7 +2938,18 @@ const QUESTIONS = [
   },
   {
     "id": 319,
-    "q": "What is the main goal of consensus algorithms like Paxos?  \fA) Encrypt transactions B) Ensure all nodes agree on a single value C) Reduce transaction cost D) Speed up mining Answer: B  Q320. In Ethereum, what does a transaction nonce represent?",
+    "q": "What is the main goal of consensus algorithms like Paxos?",
+    "options": {
+      "A": "Encrypt transactions",
+      "B": "Ensure all nodes agree on a single value",
+      "C": "Reduce transaction cost",
+      "D": "Speed up mining"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 320,
+    "q": "In Ethereum, what does a transaction nonce represent?",
     "options": {
       "A": "Block number",
       "B": "Number of transactions sent by an account",
@@ -2784,7 +3015,18 @@ const QUESTIONS = [
   },
   {
     "id": 326,
-    "q": "Which scalability approach improves performance without modifying the base blockchain layer?  \fA) Layer 2 solutions B) Hard fork C) Mining optimization D) Hashing Answer: A  Q327. Which of the following best describes a Sybil attack in blockchain?",
+    "q": "Which scalability approach improves performance without modifying the base blockchain layer?",
+    "options": {
+      "A": "Layer 2 solutions",
+      "B": "Hard fork",
+      "C": "Mining optimization",
+      "D": "Hashing"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 327,
+    "q": "Which of the following best describes a Sybil attack in blockchain?",
     "options": {
       "A": "Mining multiple blocks simultaneously",
       "B": "Creating multiple fake identities to control the network",
@@ -2916,7 +3158,18 @@ const QUESTIONS = [
   },
   {
     "id": 343,
-    "q": "What is the primary function of a timelock in blockchain transactions?  \fA) Encrypt data B) Restrict transaction execution to a specific time C) Store identity D) Increase transaction speed Answer: B  Q344. Which of the following is a common vulnerability in smart contracts?",
+    "q": "What is the primary function of a timelock in blockchain transactions?",
+    "options": {
+      "A": "Encrypt data",
+      "B": "Restrict transaction execution to a specific time",
+      "C": "Store identity",
+      "D": "Increase transaction speed"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 344,
+    "q": "Which of the following is a common vulnerability in smart contracts?",
     "options": {
       "A": "High energy consumption",
       "B": "Coding errors or bugs",
@@ -3070,7 +3323,18 @@ const QUESTIONS = [
   },
   {
     "id": 360,
-    "q": "Which of the following is an example of blockchain use in logistics?  \fA) Password management B) Tracking goods across supply chain C) Email communication D) Social networking Answer: B  Q361. What is the role of validators in Ethereum PoS?",
+    "q": "Which of the following is an example of blockchain use in logistics?",
+    "options": {
+      "A": "Password management",
+      "B": "Tracking goods across supply chain",
+      "C": "Email communication",
+      "D": "Social networking"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 361,
+    "q": "What is the role of validators in Ethereum PoS?",
     "options": {
       "A": "Encrypt transactions",
       "B": "Store private keys",

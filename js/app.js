@@ -1,4 +1,4 @@
-/* ── Blockchain Quiz App ── */
+/* ── ExamPrep Quiz App ── */
 'use strict';
 
 const App = (() => {
@@ -15,7 +15,7 @@ const App = (() => {
 
   /* ─── Missed Questions Storage (localStorage) ─── */
   const Store = {
-    key: 'bc_missed_v1',
+    key: 'exam_missed_v1',
     getMissed()  { try { return JSON.parse(localStorage.getItem(this.key) || '[]'); } catch { return []; } },
     addMissed(id) {
       const m = this.getMissed();
