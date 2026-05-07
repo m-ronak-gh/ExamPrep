@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blockchain MCQ Practice — interactive quiz for exam prep" />
+  <title>ExamPrep</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛓</text></svg>" />
+</head>
+<body>
+
+  <div class="app-wrapper">
+
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-eyebrow">// exam prep tool</div>
+      <h1 class="app-title">Blockchain <span>Quiz</span></h1>
+      <p class="header-meta" id="header-meta">Loading questions...</p>
+    </header>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-card correct">
+        <div class="stat-value" id="s-correct">0</div>
+        <div class="stat-label">Correct</div>
+      </div>
+      <div class="stat-card wrong">
+        <div class="stat-value" id="s-wrong">0</div>
+        <div class="stat-label">Wrong</div>
+      </div>
+      <div class="stat-card skip">
+        <div class="stat-value" id="s-skip">0</div>
+        <div class="stat-label">Skipped</div>
+      </div>
+      <div class="stat-card total">
+        <div class="stat-value" id="s-total">—</div>
+        <div class="stat-label">Total</div>
+      </div>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-section">
+      <div class="progress-header">
+        <span class="progress-label">Progress</span>
+        <div style="display:flex;gap:12px;align-items:center;">
+          <span class="progress-pct" id="progress-pct">0%</span>
+          <span class="progress-label" id="progress-text">0 / 0</span>
+        </div>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Mode Tabs -->
+    <div class="mode-tabs" role="tablist" aria-label="Quiz modes">
+      <button class="mode-tab active" data-mode="all"     role="tab" aria-selected="true">All</button>
+      <button class="mode-tab"        data-mode="shuffle" role="tab">Shuffled</button>
+      <button class="mode-tab"        data-mode="missed"  role="tab">Missed</button>
+      <button class="mode-tab"        data-mode="flash"   role="tab">Flash</button>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls-row">
+      <div class="jump-group">
+        <span class="jump-label">Jump to Q#</span>
+        <input
+          type="number"
+          id="jump-input"
+          class="jump-input"
+          placeholder="e.g. 47"
+          min="1"
+          aria-label="Jump to question number"
+        />
+        <button class="btn btn-sm" id="btn-jump">Go</button>
+      </div>
+      <button class="btn btn-sm" id="btn-restart-header" style="margin-left:auto">↺ Restart</button>
+    </div>
+
+    <!-- Quiz Area -->
+    <main id="quiz-area" role="main" aria-live="polite">
+      <!-- Rendered by app.js -->
+    </main>
+
+    <!-- Keyboard hints -->
+    <div class="kb-hint">
+      <div class="kb-item"><span class="kb-key">A–D</span> select answer</div>
+      <div class="kb-item"><span class="kb-key">←</span><span class="kb-key">→</span> navigate</div>
+      <div class="kb-item"><span class="kb-key">Space</span> reveal (flash)</div>
+    </div>
+
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Data & App -->
+  <script src="data/questions.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Set header meta after questions load -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const meta = document.getElementById('header-meta');
+      if (typeof QUESTIONS !== 'undefined') {
+        meta.textContent = `${QUESTIONS.length} questions loaded`;
+      }
+    });
+  </script>
+
+</body>
+</html>
